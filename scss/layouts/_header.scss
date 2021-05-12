@@ -1,0 +1,51 @@
+/* Header */
+
+.logo
+{
+    width: 25%;
+    display: flex;
+    align-items: center; 
+}
+.logo__img
+{
+    height: 80px;
+}
+.logo__textlogo
+{
+    text-align: center;
+}
+  
+/* Navigation*/ 
+
+.barnav__ul
+   {
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+       margin-left: auto;
+   }
+       
+.barnav__li
+   {
+       list-style: none;
+       margin-right: 20px;
+   }
+        
+.barnav__a
+   {
+       text-decoration: none;
+       text-transform: uppercase;
+       color: ;
+       font-size: 14px;
+       font-weight: bold;    
+   }
+           
+.barnav__a:hover
+   {
+       color: ;
+   }
+   
+.barnav__a--active
+   {
+               color: ;
+   }
