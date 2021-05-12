@@ -2,13 +2,20 @@
 {
     display: block;
     margin: auto;
-    font-family: ;
-    background-color: ;
-    border-radius: ;
+    background-color: $primary-color;
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
     cursor: pointer;
     &:hover
     {
-        background-color: ;
+        background-color: $secondary-color;
+    }
+    &--explo{
+        width: 70%;
+        margin-top: 30px;
+        text-align: center;
+
     }
 }
 

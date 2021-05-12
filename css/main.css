@@ -1,18 +1,133 @@
-/* Error: Expected expression.
- *   ,
- * 3 | $primary-color: ;
- *   |                 ^
- *   '
- *   scss/utils/_variables.scss 3:17  @import
- *   scss/main.scss 2:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 3 \2502  $primary-color: ;\a   \2502                  ^\a   \2575 \a   scss/utils/_variables.scss 3:17  @import\a   scss/main.scss 2:9               root stylesheet";
+@charset "UTF-8";
+/* Ne pas oublier d'importer les feuilles dans un ordre à respecter ! Les média queries à la fin !!! */
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.heading--h1 {
+  font-size: 24px;
+  text-align: center;
+  padding: 0 30px 15px 30px;
+}
+.heading--h2 {
+  margin-bottom: 25px;
+}
+
+.text--search {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.a {
+  color: black;
+  text-decoration: none;
+}
+.a--explo {
+  color: white;
+}
+
+.button {
+  display: block;
+  margin: auto;
+  background-color: #9356DC;
+  border-radius: 25px;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #FF79DA;
+}
+.button--explo {
+  width: 70%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.header__arrow {
+  display: none;
+}
+.header__logo__a {
+  position: relative;
+}
+.header__logo__img {
+  max-width: 45%;
+}
+
+.local {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  display: flex;
+}
+.local__i {
+  margin-right: 20px;
+}
+
+.background {
+  height: 50px;
+  background-color: #e9e8e8;
+}
+
+.explo {
+  padding: 40px 25px 50px 25px;
+  background-color: whitesmoke;
+}
+
+.barnav {
+  margin: 40px 13px 50px 25px;
+}
+.barnav__li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  height: 70px;
+  margin-bottom: 15px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+.barnav__li__num {
+  width: 24px;
+  height: 24px;
+  top: 22px;
+  left: -12px;
+  position: absolute;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  color: white;
+  font-size: 14px;
+}
+.barnav__li__div {
+  width: 40px;
+  display: flex;
+  align-items: center;
+}
+.barnav__li__fas {
+  font-size: 16px;
+  color: grey;
+}
+.barnav__li__fas__tel {
+  margin: 6px 0;
+}
+
+/*# sourceMappingURL=main.css.map */

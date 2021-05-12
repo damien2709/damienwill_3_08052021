@@ -1,16 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+    <title>Ohmyfood - Page d'accueil</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmyfood - Page d'accueil</title>
     <meta name="description" content="Ohmyfood vous permet de commander à l'avance vos menus dans des restaurants gastronomiques parisiens et de réduire ainsi votre temps d'attente lors de votre arrivée" />
+    <meta name="keywords" content="Ohmyfood, commande, repas, restaurant, gastronomique, Paris">
+    <meta name="author" content="Damien Will">
     <meta name="robots" content="index,follow" />
-    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://kit.fontawesome.com/4080d911bd.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+<!-- HEADER -->
+
+    <header class="header">
+        <a href="accueil.html" class="header__arrow"><i class="header__arrow__i"></i></a>
+        <div class="header__logo">
+            <a class="header__logo__a" href="accueil.html">
+                <img src="images/logo/ohmyfood@2x.svg" alt="Logo de l'entreprise Ohmyfood" class="header__logo__img"/>
+                <div class="local">
+                    <i class=" a fas fa-map-marker-alt local__i"></i>
+                    <div class="a">Paris, Belleville</div>
+                </div>
+            </a>
+        </div>
+    </header>
+
+<!-- MAIN -->
+
+    <main class="main">
+
+<!-- MAIN/EXPLO-->
+        <div class="background"></div>
+        <section class="explo">
+            <h1 class="heading heading--h1">Réservez le menu qui vous convient</h1>
+            <p class="text text--search">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <div class="button button--explo"><a class="a a--explo" href="" >Explorer nos restaurants</a></div>
+        </section>
+
+<!-- MAIN/BARNAV-->
+        <nav class="barnav">
+            <h2 class="heading heading--h2">Fonctionnement</h2>
+            <ul class="barnav__ul">
+                <li class="barnav__li barnav__li__first">
+                    <div class="barnav__li__num">1</div>
+                    <div class="barnav__li__div"><i class="fas fa-mobile-alt fa-lg barnav__li__fas barnav__li__fas__tel"></i></div>
+                    <a href="" class="barnav__li__a a">Choisissez un restaurant</a>
+                </li>
+                <li class="barnav__li">
+                    <div class="barnav__li__num">2</div>
+                    <div class="barnav__li__div"><i class="fas fa-list-ul barnav__li__fas barnav__li__fas__list"></i></div>
+                    <a href="" class="barnav__li__a a">Composez votre menu</a>
+                </li>
+                <li class="barnav__li">
+                    <div class="barnav__li__num">3</div>
+                    <div class="barnav__li__div"><i class="fas fa-store barnav__li__fas"></i></div>
+                    <a href="" class="barnav__li__a a">Dégustez au restaurant</a>
+                </li>
+            </ul>
+        </nav>
+
+<!-- MAIN/RESTO-->
+        <section class="resto">
+            <h2 class="heading heading--h2"></h2>
+            <div class="carte">
+                <div class="carte__top">
+                    <img src="" alt="">
+                    <div class="nouveau">Nouveau</div>
+                </div>
+                <div class="carte__bottom">
+                    <div class="carte__bottom__left">
+                        <h3 class="heading heading--h3">La palette du goût</h3>
+                        <p class="text text--carte">Ménilmontant</p>
+                    </div>
+                    <i class="carte__bottom__i"></i>
+                </div>
+            </div>
+            <div class="carte">
+                <div class="carte__top">
+                    <img src="" alt="">
+                    <div class="nouveau">Nouveau</div>
+                </div>
+                <div class="carte__bottom">
+                    <div class="carte__bottom__left">
+                        <h3 class="heading heading--h3">La note enchantée</h3>
+                        <p class="text text--carte">Charonne</p>
+                    </div>
+                    <i class="carte__bottom__i"></i>
+                </div>
+            </div>
+            <div class="carte">
+                <div class="carte__top">
+                    <img src="" alt="">
+                </div>
+                <div class="carte__bottom">
+                    <div class="carte__bottom__left">
+                        <h3 class="heading heading--h3">À la française</h3>
+                        <p class="text text--carte">Cité rouge</p>
+                    </div>
+                    <i class="carte__bottom__i"></i>
+                </div>
+            </div>
+            <div class="carte">
+                <div class="carte__top">
+                    <img src="" alt="">
+                </div>
+                <div class="carte__bottom">
+                    <div class="carte__bottom__left">
+                        <h3 class="heading heading--h3">Le délice des sens</h3>
+                        <p class="text text--carte">Folie-Méricourt</p>
+                    </div>
+                    <i class="carte__bottom__i"></i>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="images/logo/ohmyfood@2x.svg" alt="Logo de l'entreprise Ohmyfood" class="footer__logo__img">
+        </div>
+        <div class="footer__div">
+            <i class="footer__div__i"></i>
+            <a class="footer__div__a">Proposer un restaurant</a>
+        </div>
+        <div class="footer__div">
+            <i class="footer__div__i"></i>
+            <a class="footer__div__a">Devenir partenaire</a>
+        </div>
+        <a class="footer__div__a">Mentions légales</a>
+        <a class="footer__div__a">Contact</a>
+    </footer>
     
 </body>
 </html>

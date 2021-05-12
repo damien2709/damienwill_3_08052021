@@ -1,0 +1,54 @@
+.background{
+    height: 50px;
+    background-color: rgb(233, 232, 232);
+}
+.explo{
+    padding: 40px 25px 50px 25px;
+    background-color: $background;
+}
+
+.barnav{
+    margin: 40px 13px 50px 25px;
+    &__li{
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        height: 70px;
+        margin-bottom: 15px;
+        background-color: $background;
+        border-radius: 20px;
+        &__num{
+            width: 24px;
+            height: 24px;
+            top: 22px;
+            left: -12px;
+            position: absolute;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary-color;
+            color: white;
+            font-size: 14px;
+        }
+        &__div{
+            width: 40px;
+            display: flex;
+            align-items: center;
+        }
+        &__fas{
+            font-size: 16px;
+            color: grey;
+            &__tel{
+                
+                margin: 6px 0;
+            }
+            
+            
+        }
+    }
+}
+
+
+
