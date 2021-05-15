@@ -19,9 +19,8 @@
 .local{
     position: absolute;
     left: 0;
-    top: 45px;
+    top: 42px;
     display: flex;
-    &__i{
-        margin-right: 20px;
-    }
+    align-items: baseline;
+    
 }

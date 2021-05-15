@@ -18,17 +18,43 @@ body{
         padding: 0 30px 15px 30px;
     }
     &--h2{
-        margin-bottom: 25px;
+        &--fonction {
+            margin-bottom: 25px;
+        }
+        &--resto{
+            margin-bottom: 20px;
+            
+        }
+
+    }
+    &--h3{
+        margin-bottom: 6px;
     }
 }
 
 .text{
+    &--local{
+        font-size: 1.1em;
+    }
     &--search{
         text-align: center;
         margin-bottom: 15px; 
         font-size: 18px;
         font-weight: 200;
     }
+    &--resto{
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+    &--nouveau{
+        font-weight: 600;
+        color: darken($third-color, 40%);
+        font-size: 0.85em;
+    }
+}
+
+.li{
+    list-style-type: none;
 }
 
 .a{

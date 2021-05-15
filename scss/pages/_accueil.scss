@@ -1,15 +1,19 @@
+/* SECTION EXPLO */
 .background{
     height: 50px;
     background-color: rgb(233, 232, 232);
 }
 .explo{
-    padding: 40px 25px 50px 25px;
+    padding: $padding-section;
     background-color: $background;
 }
 
-.barnav{
-    margin: 40px 13px 50px 25px;
-    &__li{
+/* SECTION FONCTION */
+.fonction
+{
+    padding: 40px 20px 50px 30px;
+    &__li
+    {
         position: relative;
         display: flex;
         align-items: center;
@@ -18,7 +22,17 @@
         margin-bottom: 15px;
         background-color: $background;
         border-radius: 20px;
-        &__num{
+        &:hover
+            {
+                background-color: lighten($primary-color, 35%);
+                & .ico
+                {
+                    filter: invert(43%) sepia(66%) saturate(4357%) hue-rotate(245deg) brightness(93%) contrast(85%);
+                }
+                
+            }
+        &__num
+        {
             width: 24px;
             height: 24px;
             top: 22px;
@@ -32,23 +46,85 @@
             color: white;
             font-size: 14px;
         }
-        &__div{
+        &__div
+        {
             width: 40px;
             display: flex;
             align-items: center;
-        }
-        &__fas{
-            font-size: 16px;
-            color: grey;
-            &__tel{
-                
-                margin: 6px 0;
-            }
-            
             
         }
+
     }
 }
+
+/* SECTION RESTO */
+.resto{
+    padding: $padding-section;
+    background-color: $background;
+    &__li{
+        margin-bottom: 20px;
+    }
+    &__a{
+        &__top{
+            height: 170px;
+            border-radius: 15px 15px 0 0;
+            box-shadow: $box-shadow; 
+            &__1{
+                position: relative;
+                background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;  
+                background-size: cover;
+                background-position: bottom center;
+            }
+            &__2{
+                position: relative;
+                background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;  
+                background-size: cover;
+                background-position: center -145px;
+            }
+            &__3{
+                background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat;  
+                background-size: cover;
+                background-position: center -50px;
+            }
+            &__4{
+                background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;  
+                background-size: cover;
+                background-position: center -55px;
+            }
+        }
+        &__bottom{
+            height: 80px;
+            position: relative;
+            background: white;
+            border-radius: 0 0 15px 15px;
+            box-shadow: $box-shadow; 
+            padding: 15px 20px 15px 10px;
+        }
+        &__divico{
+            position: absolute;
+            right: 25px;
+            top: 20px;
+        }
+    }
+
+}
+
+.nouveau{
+    width: 80px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    background-color: $third-color;
+    border-radius: 2px;
+    box-shadow: $box-shadow;
+}
+
+
+
 
 
 
