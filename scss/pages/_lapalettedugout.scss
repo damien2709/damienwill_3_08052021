@@ -6,50 +6,64 @@
     }
 }
 
-.commande{
+.commande
+{
     padding: $padding-section;
     background-color: $background;
     position: relative;
-    &__divico{
+    &__divico
+    {
         position: absolute;
         top: 45px;
         right: 40px;
     }
-    &__li{
-        display: flex;
+    &__li
+    {
+        position: relative;
+        margin-bottom: 15px;
+        padding: 15px 0px 15px 10px;
         border-radius: 15px;
+        box-shadow: $box-shadow;
         background-color: white;
-        &__left{
-            flex: 1 1 auto;
-            padding: 15px 0px 15px 10px;
-            &__text{
-                display: flex;
-                &__descri{
-                    flex: 1 1 auto;
-                }
-                &__points{
-                    flex: 0 0 auto;
-                    padding-right: 20px;
-                    margin-left: auto; 
-                }
-                &__price{
-                    flex: 0 0 auto;
-                    padding-right: 20px;
-                    text-align: center; 
-                    transform: translateX(0px);
-                }
-            } 
+        &__center{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: absolute;
+            top: 38px;
+            right: 0px;
+            padding-right: 20px;
+            background-color: white;
+            z-index: 2;
+            &__points
+            {
+                flex: 0 0 auto;
+                padding-top: 2px;
+                opacity: 0;
+            }
+            &__price
+            {
+                flex: 0 0 auto;
+                padding-top: 2px;
+                background-color: white;
+            }
         }
-        &__right{
-            flex: 0 0 60px;
+        &__right
+        {
+            height: 100%;
+            width: 60px;
+            position: absolute;
+            top: 0;
+            right: 0px;
+            transform: translateX(60px);
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: $third-color;
             border-radius: 0 15px 15px 0;
-            transform: translateX(70px);
-            display: none;
-            &__coche{
+            opacity: 0;
+            &__cont
+            {
                 width: 25px;
                 height: 25px;
                 display: flex;
@@ -59,9 +73,20 @@
                 background-color: white;
             }
         }
-        &:hover .move{
+        &:hover .commande__li__center
+        {
+            display: flex;
+            transform: translateX(-60px);
+        }
+        &:hover .commande__li__center__points{
+            padding-right: 20px;
+            opacity: 1;
+        }
+        &:hover .commande__li__right
+        {
             display: flex;
             transform: translateX(0px);
+            opacity: 1;
         }
     }
 }
