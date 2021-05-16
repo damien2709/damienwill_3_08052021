@@ -15,8 +15,16 @@ body {
 
 .heading--h1 {
   font-size: 24px;
+}
+.heading--h1--explo {
   text-align: center;
   padding: 0 30px 15px 30px;
+}
+.heading--h1--commande {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: italic;
 }
 .heading--h2--fonction {
   margin-bottom: 25px;
@@ -24,8 +32,18 @@ body {
 .heading--h2--resto {
   margin-bottom: 20px;
 }
+.heading--h2--entree {
+  margin-bottom: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
 .heading--h3 {
   margin-bottom: 6px;
+}
+.heading--h3--commande {
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .text--local {
@@ -45,6 +63,9 @@ body {
   font-weight: 600;
   color: #278870;
   font-size: 0.85em;
+}
+.text--commande {
+  font-weight: bold;
 }
 
 .li {
@@ -99,18 +120,29 @@ body {
   transform: rotateY(30%);
 }
 
-/* Icones en ligne Font Awesomr */
+/* Icones en ligne Font Awesome */
+/* PAGE ACCUEIL */
 .fa-heart {
   font-size: 25px;
 }
 
+/* PAGE LAPALETTEDUGOUT */
+.fa-arrow-left {
+  position: absolute;
+  left: 20px;
+  top: 27px;
+  font-size: 20px;
+}
+
+.fa-check {
+  color: #99E2D0;
+}
+
 .header {
+  height: 68px;
   padding-top: 25px;
   padding-bottom: 10px;
   text-align: center;
-}
-.header__arrow {
-  display: none;
 }
 .header__logo__a {
   position: relative;
@@ -241,9 +273,74 @@ body {
   box-shadow: 0 3px 10px #adadad;
 }
 
+.platphoto__img {
+  width: 100%;
+  height: auto;
+}
+
+.commande {
+  padding: 40px 20px 50px 20px;
+  background-color: whitesmoke;
+  position: relative;
+}
+.commande__divico {
+  position: absolute;
+  top: 45px;
+  right: 40px;
+}
+.commande__li {
+  display: flex;
+  border-radius: 15px;
+  background-color: white;
+}
+.commande__li__left {
+  flex: 1 1 auto;
+  padding: 15px 0px 15px 10px;
+}
+.commande__li__left__text {
+  display: flex;
+}
+.commande__li__left__text__descri {
+  flex: 1 1 auto;
+}
+.commande__li__left__text__points {
+  flex: 0 0 auto;
+  padding-right: 20px;
+  margin-left: auto;
+}
+.commande__li__left__text__price {
+  flex: 0 0 auto;
+  padding-right: 20px;
+  text-align: center;
+  transform: translateX(0px);
+}
+.commande__li__right {
+  flex: 0 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  transform: translateX(70px);
+  display: none;
+}
+.commande__li__right__coche {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: white;
+}
+.commande__li:hover .move {
+  display: flex;
+  transform: translateX(0px);
+}
+
 .footer {
-  background-color: #353535;
   padding: 25px 20px;
+  background-color: #353535;
 }
 .footer__logo {
   height: 17px;

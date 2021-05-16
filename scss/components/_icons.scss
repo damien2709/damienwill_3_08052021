@@ -29,8 +29,21 @@
 
 }
 
-/* Icones en ligne Font Awesomr */
+/* Icones en ligne Font Awesome */
+
+    /* PAGE ACCUEIL */
 .fa-heart{
     font-size: 25px; 
 }
 
+    /* PAGE LAPALETTEDUGOUT */
+.fa-arrow-left{
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    font-size: 20px;
+}
+
+.fa-check{
+    color: $third-color;
+}

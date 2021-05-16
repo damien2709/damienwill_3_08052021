@@ -1,0 +1,68 @@
+.platphoto
+{
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.commande{
+    padding: $padding-section;
+    background-color: $background;
+    position: relative;
+    &__divico{
+        position: absolute;
+        top: 45px;
+        right: 40px;
+    }
+    &__li{
+        display: flex;
+        border-radius: 15px;
+        background-color: white;
+        &__left{
+            flex: 1 1 auto;
+            padding: 15px 0px 15px 10px;
+            &__text{
+                display: flex;
+                &__descri{
+                    flex: 1 1 auto;
+                }
+                &__points{
+                    flex: 0 0 auto;
+                    padding-right: 20px;
+                    margin-left: auto; 
+                }
+                &__price{
+                    flex: 0 0 auto;
+                    padding-right: 20px;
+                    text-align: center; 
+                    transform: translateX(0px);
+                }
+            } 
+        }
+        &__right{
+            flex: 0 0 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $third-color;
+            border-radius: 0 15px 15px 0;
+            transform: translateX(70px);
+            display: none;
+            &__coche{
+                width: 25px;
+                height: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                background-color: white;
+            }
+        }
+        &:hover .move{
+            display: flex;
+            transform: translateX(0px);
+        }
+    }
+}
+
