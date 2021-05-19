@@ -1,3 +1,4 @@
+/* GENERAL */
 *
 {
     margin: 0;
@@ -11,6 +12,7 @@ body{
     color: black;
 }
 
+/* TITRES ET TEXTES */
 .heading{
     &--h1{
         font-size: 24px;
@@ -33,7 +35,6 @@ body{
             margin-bottom: 20px;  
         }
         &--entree{
-            margin-bottom: 25px;
             font-size: 18px;
             text-transform: uppercase;
             font-weight: 300;
@@ -43,7 +44,7 @@ body{
     &--h3{
         margin-bottom: 6px;
         &--commande{
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 600;
         }
     }
@@ -70,10 +71,11 @@ body{
         font-size: 0.85em;
     }
     &--commande{
-        font-size: 0.95em;
+        font-size: 0.85em;
     }
 }
 
+/* LISTES */
 .li{
     list-style-type: none;
 }

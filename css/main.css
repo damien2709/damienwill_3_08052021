@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Ne pas oublier d'importer les feuilles dans un ordre à respecter ! Les média queries à la fin !!! */
 /* Variables */
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@ body {
   color: black;
 }
 
+/* TITRES ET TEXTES */
 .heading--h1 {
   font-size: 24px;
 }
@@ -33,7 +35,6 @@ body {
   margin-bottom: 20px;
 }
 .heading--h2--entree {
-  margin-bottom: 25px;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 300;
@@ -42,7 +43,7 @@ body {
   margin-bottom: 6px;
 }
 .heading--h3--commande {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -65,9 +66,10 @@ body {
   font-size: 0.85em;
 }
 .text--commande {
-  font-size: 0.95em;
+  font-size: 0.85em;
 }
 
+/* LISTES */
 .li {
   list-style-type: none;
 }
@@ -83,19 +85,26 @@ body {
 .button {
   display: block;
   margin: auto;
-  background-color: #9356DC;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
   border-radius: 25px;
   padding: 15px;
   color: white;
   cursor: pointer;
-}
-.button:hover {
-  background-color: #FF79DA;
+  text-align: center;
 }
 .button--explo {
   width: 70%;
   margin-top: 30px;
-  text-align: center;
+}
+.button--commande {
+  width: 55%;
+}
+.button:hover {
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  transform: scale(1.05);
+}
+.button:hover a {
+  transform: scale(1.05);
 }
 
 /* Icones téléchargés */
@@ -128,9 +137,6 @@ body {
 
 /* PAGE LAPALETTEDUGOUT */
 .fa-arrow-left {
-  position: absolute;
-  left: 20px;
-  top: 27px;
   font-size: 20px;
 }
 
@@ -149,6 +155,11 @@ body {
 }
 .header__logo__img {
   max-width: 45%;
+}
+.header__arrow {
+  position: absolute;
+  left: 20px;
+  top: 27px;
 }
 
 .local {
@@ -273,20 +284,47 @@ body {
   box-shadow: 0 3px 10px #adadad;
 }
 
+/* SECTION PLATPHOTO  */
+.platphoto {
+  margin-bottom: -60px;
+  max-height: 350px;
+}
 .platphoto__img {
-  width: 100%;
+  width: 120%;
   height: auto;
+}
+.platphoto__img--note {
+  object-fit: contain;
+}
+
+@media (min-width: 600px) {
+  .platphoto__img {
+    max-width: 100%;
+  }
+}
+/* SECTION COMMANDE */
+.carte {
+  margin-bottom: 40px;
 }
 
 .commande {
   padding: 40px 20px 50px 20px;
   background-color: whitesmoke;
   position: relative;
+  border-radius: 40px 40px 0 0;
 }
 .commande__divico {
   position: absolute;
   top: 45px;
   right: 40px;
+}
+.commande__bordure {
+  width: 50%;
+  background: linear-gradient(to right, #99E2D0, #99E2D0) no-repeat;
+  background-size: 27% 3px;
+  background-position: bottom left;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
 }
 .commande__li {
   position: relative;
@@ -303,7 +341,8 @@ body {
   position: absolute;
   top: 38px;
   right: 0px;
-  padding-right: 20px;
+  padding-right: 25px;
+  padding-left: 6px;
   background-color: white;
   z-index: 2;
 }
@@ -316,6 +355,9 @@ body {
   flex: 0 0 auto;
   padding-top: 2px;
   background-color: white;
+}
+.commande__li__center__price__provence {
+  padding-top: 20px;
 }
 .commande__li__right {
   height: 100%;

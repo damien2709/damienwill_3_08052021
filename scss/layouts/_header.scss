@@ -12,6 +12,11 @@
                 max-width: 45%; 
             }
     }
+    &__arrow{
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    }
 }
 
 .local{

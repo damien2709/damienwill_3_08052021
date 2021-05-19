@@ -1,9 +1,28 @@
+/* SECTION PLATPHOTO  */
 .platphoto
 {
+    margin-bottom: -60px;
+    max-height: 350px;
     &__img{
-        width: 100%;
-        height: auto;
+        width: 120%;
+        height: auto; 
+        &--note{
+            object-fit: contain;
+        }
     }
+}
+
+@media (min-width: 600px){
+    .platphoto{
+        &__img{
+            max-width: 100%;
+        }
+    }
+}
+
+/* SECTION COMMANDE */
+.carte{
+    margin-bottom: 40px;
 }
 
 .commande
@@ -11,11 +30,23 @@
     padding: $padding-section;
     background-color: $background;
     position: relative;
+    border-radius: 40px 40px 0 0;
+
     &__divico
     {
         position: absolute;
         top: 45px;
         right: 40px;
+    }
+    &__bordure{
+        width: 50%;
+        background: linear-gradient(to right, $third-color, $third-color) no-repeat;
+        background-size: 27% 3px;
+        background-position: bottom left;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+
+
     }
     &__li
     {
@@ -32,7 +63,8 @@
             position: absolute;
             top: 38px;
             right: 0px;
-            padding-right: 20px;
+            padding-right: 25px;
+            padding-left: 6px;
             background-color: white;
             z-index: 2;
             &__points
@@ -46,6 +78,9 @@
                 flex: 0 0 auto;
                 padding-top: 2px;
                 background-color: white;
+                &__provence{
+                    padding-top: 20px;
+                }
             }
         }
         &__right
