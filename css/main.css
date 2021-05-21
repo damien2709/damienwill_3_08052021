@@ -107,6 +107,16 @@ body {
   transform: scale(1.05);
 }
 
+@media (min-width: 600px) {
+  .button--explo {
+    max-width: 40%;
+  }
+}
+@media (min-width: 1100px) {
+  .button--explo {
+    max-width: 25%;
+  }
+}
 /* Icones téléchargés */
 .ico--local {
   height: 17px;
@@ -284,6 +294,40 @@ body {
   box-shadow: 0 3px 10px #adadad;
 }
 
+@media (min-width: 600px) {
+  .fonction, .heading--h2--resto, .resto__ul {
+    max-width: 60%;
+    margin: auto;
+  }
+
+  .heading--h2--resto {
+    margin-bottom: 20px;
+  }
+
+  .footer__logo, .footer__nav {
+    max-width: 60%;
+    margin-left: 20%;
+  }
+}
+@media (min-width: 1100px) {
+  .fonction, .heading--h2--resto, .resto__ul {
+    max-width: 30%;
+    margin: auto;
+  }
+
+  .fonction {
+    text-align: center;
+  }
+
+  .heading--h2--resto {
+    margin-bottom: 20px;
+  }
+
+  .footer__logo, .footer__nav {
+    max-width: 50%;
+    margin-left: 35%;
+  }
+}
 /* SECTION PLATPHOTO  */
 .platphoto {
   margin-bottom: -60px;
