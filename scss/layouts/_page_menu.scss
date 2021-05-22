@@ -63,8 +63,7 @@
             position: absolute;
             top: 38px;
             right: 0px;
-            padding-right: 25px;
-            padding-left: 6px;
+            padding-right: 25px;          
             background-color: white;
             z-index: 2;
             &__points
@@ -72,6 +71,10 @@
                 flex: 0 0 auto;
                 padding-top: 2px;
                 opacity: 0;
+                &--opa{
+                    opacity: 1;
+                    margin-right: 26px;
+                }
             }
             &__price
             {
@@ -108,13 +111,17 @@
                 background-color: white;
             }
         }
+        &:hover
+        {
+            cursor: pointer;
+        }
         &:hover .commande__li__center
         {
             display: flex;
             transform: translateX(-60px);
         }
         &:hover .commande__li__center__points{
-            padding-right: 20px;
+            margin-right: 12px;
             opacity: 1;
         }
         &:hover .commande__li__right

@@ -2,15 +2,16 @@
 {
     display: block;
     margin: auto;
-    background-image: linear-gradient(to top, $primary-color, $secondary-color);
+    background: $background-button;
     border-radius: 25px;
     padding: 15px;
     color: white;
     cursor: pointer;
     text-align: center;
+    box-shadow: $box-shadow;
     &--explo
     {
-        width: 70%;
+        width: 65%;
         margin-top: 30px; 
     }
     &--commande
@@ -19,12 +20,8 @@
     }
     &:hover
     {
-        background-image: linear-gradient(to top, $secondary-color, $primary-color);
-        transform: scale(1.05);
-    }
-    &:hover a
-    {
-        transform: scale(1.05);
+        background: $background-button-hover;
+        box-shadow: 0 3px 10px darken($backgrey, 30%);
     }
 }
 
