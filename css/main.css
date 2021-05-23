@@ -122,6 +122,7 @@ body {
   font-weight: 300;
 }
 .text--commande--bold {
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -173,6 +174,9 @@ body {
   .button--explo {
     max-width: 40%;
   }
+  .button--commande {
+    max-width: 40%;
+  }
 }
 @media (min-width: 1100px) {
   .button--explo {
@@ -221,6 +225,8 @@ body {
   padding-top: 25px;
   padding-bottom: 10px;
   text-align: center;
+  z-index: 2;
+  background: white;
 }
 .header__logo__a {
   position: relative;
@@ -242,6 +248,14 @@ body {
   align-items: baseline;
 }
 
+@media (min-width: 600px) {
+  .header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 /* SECTION EXPLO */
 .background {
   height: 50px;
@@ -358,6 +372,10 @@ body {
 
 /* MEDIA QUERIES */
 @media (min-width: 600px) {
+  .background {
+    margin-top: 68px;
+  }
+
   .fonction, .heading--h2--resto, .resto__ul {
     max-width: 60%;
     margin: auto;
@@ -395,6 +413,9 @@ body {
 }
 
 @media (min-width: 600px) {
+  .platphoto {
+    max-height: 500px;
+  }
   .platphoto__img {
     max-width: 100%;
   }
@@ -415,6 +436,9 @@ body {
   top: 45px;
   right: 40px;
 }
+.commande__divico__ico {
+  height: 25px;
+}
 .commande__bordure {
   width: 50%;
   background: linear-gradient(to right, #99E2D0, #99E2D0) no-repeat;
@@ -431,28 +455,23 @@ body {
   box-shadow: 0 3px 10px #adadad;
   background-color: white;
 }
+.commande__li__detail {
+  width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .commande__li__center {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   position: absolute;
   top: 38px;
   right: 0px;
-  padding-right: 25px;
+  padding-right: 30px;
   background-color: white;
-  z-index: 2;
-}
-.commande__li__center__points {
-  flex: 0 0 auto;
-  padding-top: 2px;
-  opacity: 0;
-}
-.commande__li__center__points--opa {
-  opacity: 1;
-  margin-right: 26px;
+  transform: translateX(0px);
+  transition: transform 200ms ease-out;
 }
 .commande__li__center__price {
-  flex: 0 0 auto;
+  width: 25%;
   padding-top: 2px;
   background-color: white;
 }
@@ -461,17 +480,18 @@ body {
 }
 .commande__li__right {
   height: 100%;
-  width: 60px;
+  width: 17%;
   position: absolute;
   top: 0;
   right: 0px;
-  transform: translateX(60px);
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   opacity: 0;
+  transform: translateX(60px);
+  transition: transform 200ms ease-out, opacity 300ms ease-out;
 }
 .commande__li__right__cont {
   width: 25px;
@@ -489,12 +509,10 @@ body {
   display: flex;
   transform: translateX(-60px);
 }
-.commande__li:hover .commande__li__center__points {
-  margin-right: 12px;
-  opacity: 1;
+.commande__li:hover .commande__li__detail {
+  width: 61%;
 }
 .commande__li:hover .commande__li__right {
-  display: flex;
   transform: translateX(0px);
   opacity: 1;
 }

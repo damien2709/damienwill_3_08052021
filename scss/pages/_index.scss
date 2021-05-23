@@ -126,6 +126,10 @@
 /* MEDIA QUERIES */
 @media (min-width: 600px)
 {
+    .background
+    {
+        margin-top: 68px;
+    }
     .fonction, .heading--h2--resto, .resto__ul
     {
         max-width: 60%;
