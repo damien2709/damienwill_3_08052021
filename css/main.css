@@ -1,6 +1,61 @@
 @charset "UTF-8";
 /* Ne pas oublier d'importer les feuilles dans un ordre à respecter ! Les média queries à la fin !!! */
 /* Variables */
+/* Keyframes */
+@keyframes loader-page {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader-progress {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    animation-timing-function: ease-in-out;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader-barre {
+  0% {
+    transform: scaleX(0);
+    animation-timing-function: ease-out;
+  }
+  25% {
+    transform: scaleX(0.2);
+    animation-timing-function: ease-in-out;
+    animation-timing-function: normal;
+  }
+  50% {
+    transform: scaleX(0.4);
+    animation-timing-function: ease-out;
+  }
+  90% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 /* POLICES */
 /* shrikhand-regular - latin */
 @font-face {
@@ -256,6 +311,31 @@ body {
     left: 0;
   }
 }
+/* SECTION LOADER */
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  animation: loader-page 3000ms forwards;
+  z-index: 3;
+}
+.loader__progress {
+  width: 80%;
+  height: 30px;
+  margin: auto;
+  margin-top: 230px;
+  border: 1px solid #9356DC;
+  animation: loader-progress 2550ms 250ms both;
+}
+.loader__progress__barre {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #9356DC, #FF79DA);
+  transform-origin: 0% 50%;
+  animation: loader-barre 2550ms 250ms forwards;
+}
+
 /* SECTION EXPLO */
 .background {
   height: 50px;

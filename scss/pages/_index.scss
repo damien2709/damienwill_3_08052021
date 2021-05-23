@@ -1,3 +1,32 @@
+/* SECTION LOADER */
+.loader
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    animation: loader-page 3000ms forwards;
+    z-index: 3;
+    &__progress
+    {
+        width: 80%;
+        height: 30px;
+        margin: auto;
+        margin-top: 230px;
+        border: 1px solid $primary-color;
+        animation: loader-progress 2550ms 250ms both;
+        &__barre
+        {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right, $primary-color, $secondary-color);
+            transform-origin: 0% 50%;
+            animation: loader-barre 2550ms 250ms forwards;
+        }
+    }
+}
+
+
 /* SECTION EXPLO */
 .background{
     height: 50px;
