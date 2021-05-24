@@ -4,24 +4,30 @@
     position: absolute;
     width: 100%;
     height: 100vh;
+    margin-top: 35%;
     background-color: white;
     animation: loader-page 3000ms forwards;
-    z-index: 3;
+    &__logo
+    {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        animation: loader-progress 2250ms 250ms both;
+    }
     &__progress
     {
         width: 80%;
         height: 30px;
         margin: auto;
-        margin-top: 230px;
         border: 1px solid $primary-color;
-        animation: loader-progress 2550ms 250ms both;
+        animation: loader-progress 2250ms 250ms both;
         &__barre
         {
             height: 100%;
             width: 100%;
             background: linear-gradient(to right, $primary-color, $secondary-color);
             transform-origin: 0% 50%;
-            animation: loader-barre 2550ms 250ms forwards;
+            animation: loader-barre 2250ms 250ms both;
         }
     }
 }
@@ -34,6 +40,8 @@
     height: 50px;
     position: relative;
     background-color: rgb(233, 232, 232);
+    animation: $animation;
+    z-index: -1;
     &::before
     {
         content: " ";
@@ -50,12 +58,14 @@
 .explo{
     padding: $padding-section;
     background-color: $background;
+    animation: $animation;
 }
 
 /* SECTION FONCTION */
 .fonction
 {
     padding: 40px 20px 50px 30px;
+    animation: $animation;
     &__li
     {
         position: relative;
@@ -69,7 +79,7 @@
         &:hover
             {
                 background-color: lighten($primary-color, 35%);
-                & .ico
+                & .ico--fonction
                 {
                     filter: invert(43%) sepia(66%) saturate(4357%) hue-rotate(245deg) brightness(93%) contrast(85%);
                 }
@@ -105,6 +115,7 @@
 .resto{
     padding: $padding-section;
     background-color: $background;
+    animation: $animation;
     &__li{
         margin-bottom: 20px;
     }
