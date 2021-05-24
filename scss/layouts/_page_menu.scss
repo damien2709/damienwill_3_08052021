@@ -35,15 +35,16 @@
     background-color: $background;
     position: relative;
     border-radius: 40px 40px 0 0;
-
     &__divico
     {
         position: absolute;
         top: 45px;
         right: 40px;
+        height: 25px;
         &__ico
         {
             height: 25px;
+
         }
     }
     &__bordure{

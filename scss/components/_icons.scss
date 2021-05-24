@@ -31,9 +31,31 @@
 /* Icones en ligne Font Awesome */
 
     /* PAGE ACCUEIL */
-.fa-heart{
-    font-size: 25px; 
-}
+    .fa-heart
+    {
+        font-size: 25px; 
+        position: absolute;
+        top: 45px;
+        right: 40px;
+        height: 25px;
+        background: transparent;
+        &:hover + .fa-heart--full
+        {
+            opacity: 1;
+        }
+
+    }
+    .fa-heart--full
+    {
+        font-size: 25px; 
+        position: absolute;
+        top: 45px;
+        right: 40px;
+        height: 25px;
+        color: $primary-color;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+    }
 
     /* PAGE LAPALETTEDUGOUT */
 .fa-arrow-left{

@@ -39,7 +39,7 @@
         &:hover
             {
                 background-color: lighten($primary-color, 35%);
-                & .ico
+                & .ico--fonction
                 {
                     filter: invert(43%) sepia(66%) saturate(4357%) hue-rotate(245deg) brightness(93%) contrast(85%);
                 }
