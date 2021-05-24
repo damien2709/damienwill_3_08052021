@@ -13,9 +13,6 @@ $padding-section: 40px 20px 50px 20px;
 $box-shadow : 0 3px 10px $backgrey;
 
 
-<<<<<<< Updated upstream
-
-=======
 @keyframes loader-page
 {
     0%{
@@ -62,7 +59,8 @@ $box-shadow : 0 3px 10px $backgrey;
 
 @keyframes loader-barre
 {
-    0%{
+    0%
+    {
         transform: scaleX(0);
         animation-timing-function: ease-out;
     }
@@ -82,9 +80,9 @@ $box-shadow : 0 3px 10px $backgrey;
         transform: scaleX(1);
         
     }
-    100%{
+    100%
+    {
         transform: scaleX(1);
     }
 
 }
->>>>>>> Stashed changes
