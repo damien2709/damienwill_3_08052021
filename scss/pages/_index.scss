@@ -39,7 +39,7 @@
         &:hover
             {
                 background-color: lighten($primary-color, 35%);
-                & .ico--fonction
+                & .ico
                 {
                     filter: invert(43%) sepia(66%) saturate(4357%) hue-rotate(245deg) brightness(93%) contrast(85%);
                 }
@@ -113,11 +113,20 @@
             border-radius: 0 0 15px 15px;
             box-shadow: $box-shadow; 
             padding: 15px 20px 15px 10px;
-        }
-        &__divico{
-            position: absolute;
-            right: 25px;
-            top: 20px;
+            &__heart
+            {
+                position: absolute;
+                right: 25px;
+                top: 20px;
+                &:hover > .heart-index-full
+                {
+                    opacity: 1;
+                }
+                &:hover > .heart-index
+                {
+                    opacity: 0;
+                }
+            }
         }
     }
 
