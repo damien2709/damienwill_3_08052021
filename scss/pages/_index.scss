@@ -76,6 +76,7 @@
         margin-bottom: 15px;
         background-color: $background;
         border-radius: 20px;
+        cursor
         &:hover
             {
                 background-color: lighten($primary-color, 35%);
@@ -126,23 +127,23 @@
             box-shadow: $box-shadow; 
             &__1{
                 position: relative;
-                background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;  
+                background: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;  
                 background-size: cover;
                 background-position: bottom center;
             }
             &__2{
                 position: relative;
-                background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;  
+                background: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;  
                 background-size: cover;
                 background-position: center -145px;
             }
             &__3{
-                background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat;  
+                background: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat;  
                 background-size: cover;
                 background-position: center -50px;
             }
             &__4{
-                background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;  
+                background: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;  
                 background-size: cover;
                 background-position: center -55px;
             }
@@ -168,6 +169,10 @@
                     opacity: 0;
                 }
             }
+        }
+        &:hover > :nth-child(1)
+        {
+            opacity: 90%;
         }
     }
 
