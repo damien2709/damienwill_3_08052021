@@ -422,11 +422,12 @@ body {
   margin-bottom: 15px;
   background-color: whitesmoke;
   border-radius: 20px;
+  cursor: pointer;
 }
-cursor .fonction__li:hover {
+.fonction__li:hover {
   background-color: #f2eafb;
 }
-cursor .fonction__li:hover .ico--fonction {
+.fonction__li:hover .ico--fonction {
   filter: invert(43%) sepia(66%) saturate(4357%) hue-rotate(245deg) brightness(93%) contrast(85%);
 }
 .fonction__li__num {
@@ -465,23 +466,23 @@ cursor .fonction__li:hover .ico--fonction {
 }
 .resto__a__top__1 {
   position: relative;
-  background: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
+  background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 .resto__a__top__2 {
   position: relative;
-  background: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;
+  background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center -145px;
 }
 .resto__a__top__3 {
-  background: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat;
+  background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center -50px;
 }
 .resto__a__top__4 {
-  background: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
+  background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center -55px;
 }
