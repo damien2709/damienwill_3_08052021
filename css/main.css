@@ -297,17 +297,19 @@ body {
   color: #99E2D0;
 }
 
-.heart-index {
+.heart--wide {
+  height: 22px;
+  width: 25px;
   opacity: 1;
   position: absolute;
   top: 0;
   right: 0;
-  color: grey;
   transition: opacity 300ms ease-in-out;
 }
 
-.heart-index-full {
-  color: #9356DC;
+.heart--full {
+  height: 22px;
+  width: 25px;
   position: absolute;
   top: 0;
   right: 0;
@@ -499,10 +501,10 @@ body {
   right: 25px;
   top: 20px;
 }
-.resto__a__bottom__heart:hover > .heart-index-full {
+.resto__a__bottom__heart:hover > .heart--full {
   opacity: 1;
 }
-.resto__a__bottom__heart:hover > .heart-index {
+.resto__a__bottom__heart:hover > .heart--wide {
   opacity: 0;
 }
 .resto__a:hover > :nth-child(1) {
@@ -589,10 +591,10 @@ body {
   top: 45px;
   right: 40px;
 }
-.commande__divico:hover > .heart-index-full {
+.commande__divico:hover > .heart--full {
   opacity: 1;
 }
-.commande__divico:hover > .heart-index {
+.commande__divico:hover > .heart--wide {
   opacity: 0;
 }
 .commande__bordure {

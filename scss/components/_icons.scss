@@ -45,26 +45,3 @@
 }
 
 
-.heart-index /* Les 2 icones heart-index sont reliés pour la page d'accueil : 
-- à la div resto__bottom__heart du fichier index.scss. La transition est déclenchée au hover de cette div.
-Pour les pages de menu :hover
-- à la div commande__divico du fichier page_menu.scss. La transition est déclenchée au hover de cette div*/
-{
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: grey;
-    transition: opacity 300ms ease-in-out;
-
-}
-
-.heart-index-full
-{
-    color: $primary-color;
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 300ms ease-in-out;
-}

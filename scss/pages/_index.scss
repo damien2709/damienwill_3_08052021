@@ -160,11 +160,11 @@
                 position: absolute;
                 right: 25px;
                 top: 20px;
-                &:hover > .heart-index-full
+                &:hover > .heart--full
                 {
                     opacity: 1;
                 }
-                &:hover > .heart-index
+                &:hover > .heart--wide
                 {
                     opacity: 0;
                 }
