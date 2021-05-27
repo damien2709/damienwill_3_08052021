@@ -219,7 +219,7 @@ body {
 
 @media (min-width: 600px) {
   .heading--h1--commande {
-    margin-left: 20%;
+    margin-left: 10%;
   }
 
   .heading--h2--resto {
@@ -398,6 +398,7 @@ body {
 /* SECTION EXPLO */
 .background {
   height: 50px;
+  display: block;
   position: relative;
   background-color: #e9e8e8;
 }
@@ -474,7 +475,7 @@ body {
 .resto__a__top__1 {
   position: relative;
   background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
-  background-size: cover;
+  background-size: 105%;
   background-position: bottom center;
 }
 .resto__a__top__2 {
@@ -484,7 +485,7 @@ body {
   background-position: center -145px;
 }
 .resto__a__top__3 {
-  background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat;
+  background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_light.jpg) no-repeat;
   background-size: cover;
   background-position: center -50px;
 }
@@ -564,15 +565,16 @@ body {
 }
 /* SECTION PLATPHOTO  */
 .platphoto {
-  margin-bottom: -60px;
-  max-height: 350px;
+  position: relative;
+  z-index: -1;
 }
 .platphoto__img {
-  width: 120%;
-  height: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 270px;
 }
-.platphoto__img--note {
-  object-fit: contain;
+.platphoto__img--palette {
+  width: 100%;
 }
 
 /* SECTION COMMANDE */
@@ -583,7 +585,7 @@ body {
 .commande {
   padding: 40px 20px 50px 20px;
   background-color: whitesmoke;
-  position: relative;
+  margin-top: -55px;
   border-radius: 40px 40px 0 0;
 }
 .commande__divico {
@@ -691,6 +693,17 @@ body {
   }
 }
 @media (min-width: 1000px) {
+  .platphoto {
+    margin-bottom: -60px;
+    margin-top: 100px;
+    max-height: 550px;
+  }
+  .platphoto__img {
+    width: 100%;
+    height: auto;
+    margin-top: -100px;
+  }
+
   .carte {
     max-width: 40%;
   }

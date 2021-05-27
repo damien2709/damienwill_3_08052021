@@ -1,13 +1,17 @@
 /* SECTION PLATPHOTO  */
 .platphoto
 {
-    margin-bottom: -60px;
-    max-height: 350px;
-    &__img{
-        width: 120%;
-        height: auto; 
-        &--note{
-            object-fit: contain;
+    position: relative;
+    z-index: -1;
+    
+    &__img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 270px;
+        &--palette
+        {
+            width: 100%;
         }
     }
 }
@@ -21,9 +25,8 @@
 {
     padding: $padding-section;
     background-color: $background;
-    position: relative;
+    margin-top: -55px;
     border-radius: 40px 40px 0 0;
-
     &__divico /* La div est de même taille que les deux svg coeurs qu'elle contient en absolute */
     {
         display: inline-block;
@@ -146,10 +149,21 @@
 
 @media (min-width: 1000px)
 {
+    .platphoto
+    {
+        margin-bottom: -60px;
+        margin-top: 100px;
+        max-height: 550px;
+        &__img
+        {   
+        width: 100%;
+        height: auto;
+        margin-top: -100px;
+        
+        }
+    }
     .carte
     {
         max-width: 40%;
     }
-    
-
 }

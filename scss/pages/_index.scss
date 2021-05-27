@@ -40,6 +40,7 @@
 .background
 {
     height: 50px;
+    display: block;
     position: relative;
     background-color: rgb(233, 232, 232);
     &::before
@@ -126,7 +127,7 @@
             &__1{
                 position: relative;
                 background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;  
-                background-size: cover;
+                background-size: 105%;
                 background-position: bottom center;
             }
             &__2{
@@ -136,7 +137,7 @@
                 background-position: center -145px;
             }
             &__3{
-                background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat;  
+                background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_light.jpg) no-repeat;  
                 background-size: cover;
                 background-position: center -50px;
             }
