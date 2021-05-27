@@ -36,16 +36,21 @@
         }
         &--commande
         {
-            max-width: 40%;
+            max-width: 30%;
+            margin-top: 50px;
         }
     }
 }
 
-@media (min-width: 1100px)
+@media (min-width: 1000px)
 {
     .button
     {
         &--explo
+        {
+            max-width: 20%;
+        }
+        &--commande
         {
             max-width: 20%;
         }

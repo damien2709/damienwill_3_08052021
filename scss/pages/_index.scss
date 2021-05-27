@@ -1,16 +1,18 @@
 /* SECTION LOADER */
 .loader
 {
-    position: absolute;
     width: 100%;
     height: 100vh;
-    margin-top: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: white;
     animation: loader-page 3000ms forwards;
     &__logo
     {
         display: flex;
         justify-content: center;
+        margin-top: 300px;
         margin-bottom: 40px;
         animation: loader-progress 2250ms 250ms both;
     }
@@ -40,8 +42,6 @@
     height: 50px;
     position: relative;
     background-color: rgb(233, 232, 232);
-    animation: $animation;
-    z-index: -1;
     &::before
     {
         content: " ";
@@ -55,17 +55,16 @@
 
     }
 }
+
 .explo{
     padding: $padding-section;
     background-color: $background;
-    animation: $animation;
 }
 
 /* SECTION FONCTION */
 .fonction
 {
     padding: 40px 20px 50px 30px;
-    animation: $animation;
     &__li
     {
         position: relative;
@@ -116,7 +115,6 @@
 .resto{
     padding: $padding-section;
     background-color: $background;
-    animation: $animation;
     &__li{
         margin-bottom: 20px;
     }
@@ -155,8 +153,10 @@
             border-radius: 0 0 15px 15px;
             box-shadow: $box-shadow; 
             padding: 15px 20px 15px 10px;
-            &__heart
+            &__heart /* La div est de même taille que les deux svg coeurs qu'elle contient en absolute */
             {
+                width: 25px;
+                height: 22px;
                 position: absolute;
                 right: 25px;
                 top: 20px;
@@ -193,26 +193,34 @@
 }
 
 /* MEDIA QUERIES */
+@media (max-width:350px)
+{
+    .a--explo
+    {
+        font-size: 14px;
+    }
+}
+
 @media (min-width: 600px)
 {
-    .background
-    {
-        margin-top: 68px;
-    }
-    .fonction, .heading--h2--resto, .resto__ul
+    .fonction
     {
         max-width: 60%;
         margin: auto;
     }
-    .heading--h2--resto
+    .resto__ul
     {
-        margin-bottom: 20px;
+        max-width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
     }
 }
 
-@media (min-width: 1100px)
+@media (min-width: 1000px)
 {
-    .fonction, .heading--h2--resto, .resto__ul
+    .fonction
     {
         max-width: 40%;
         margin: auto;
@@ -220,10 +228,6 @@
     .resto__a__top
     {
         height: 250px;
-    }
-    .heading--h2--resto
-    {
-        margin-bottom: 20px;
     }
 }
 
