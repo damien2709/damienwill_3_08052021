@@ -81,36 +81,45 @@
 }
 
 body{
+    font-size: 16px;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: black;
 }
 
 /* TITRES ET TEXTES */
-.heading{
-    &--h1{
+.heading
+{
+    &--h1
+    {
         font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-        font-size: 24px;
-        &--explo{
+        font-size: 1.5rem;
+        &--explo
+        {
         text-align: center;
         padding: 0 30px 15px 30px;
         font-family: "roboto", Arial, Helvetica, sans-serif;
         }
-        &--commande{
+        &--commande
+        {
             display: inline-block;  
-            margin-right: 20px;
+            margin-right: 25px;
             margin-bottom: 30px;
-            font-size: 26px;
+            font-size: 1.6rem;
         }
     }
-    &--h2{
-        &--fonction {
+    &--h2
+    {
+        &--fonction 
+        {
             margin-bottom: 25px;
         }
-        &--resto{
+        &--resto
+        {
             margin-bottom: 20px;  
         }
-        &--entree{
-            font-size: 17px;
+        &--entree
+        {
+            font-size: 1rem;
             text-transform: uppercase;
             font-weight: 300;
         }
@@ -118,63 +127,93 @@ body{
     }
     &--h3{
         margin-bottom: 6px;
-        &--commande{
-            font-size: 17px;
-            font-weight: 600;
+        font-weight: 600;
+        &--resto
+        {
+            font-size: 1.1rem;
+        }
+        &--commande
+        {
+            font-size: 1.1rem;
+            font-weight: 500;
         }
     }
     
 }
 
-.text{
-    &--local{
-        font-size: 1.0em;
+.text
+{
+    &--local
+    {
+        font-size: 1rem;
         font-weight: 400;
     }
-    &--search{
+    &--search
+    {
         text-align: center;
         margin-bottom: 15px; 
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: 200;
     }
-    &--resto{
-        font-size: 1.1em;
+    &--fonction
+    {
+        font-size: 0.9rem;
+    }
+    &--resto
+    {
+        font-size: 1.1rem;
         font-weight: 300;
     }
-    &--nouveau{
+    &--nouveau
+    {
         font-weight: 500;
         color: darken($third-color, 40%);
-        font-size: 0.85em;
+        font-size: 0.85rem;
     }
-    &--commande{
-        font-size: 14px;
+    &--commande
+    {
+        font-size: 0.85rem;
         font-weight: 300;
-        &--bold{
-            font-size: 15px;
+        &--bold
+        {
             font-weight: 500;
         }
+    }
+    &--footer
+    {
+        font-family: 'Shrikhand', "arial", "sans-serif";
+        color: white;
+        font-size: 1.1rem;
     }
 }
 
 /* LISTES */
-.li{
+.li
+{
     list-style-type: none;
 }
 
-.a{
+.a
+{
     color: black;
     text-decoration: none;
-    &--fonction{
+    &--fonction
+    {
         font-weight: 500;
     }
-    &--explo{
-        color: white;
-        font-weight: 400;
-    }
-    &--footer{
+    &--footer
+    {
         font-weight: 300;
     }
     
+}
+
+@media (max-width:350px)
+{
+    .text--button
+    {
+        font-size: 0.85rem;
+    }
 }
 
 @media (min-width: 600px) 
@@ -188,6 +227,21 @@ body{
         width: 80%;
         margin-left: 10%;
     }
+    .text--footer
+    {
+        max-width: 80%;
+        margin-left: 10%;
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 700px)
+{
+    body
+    {
+        font-size: 17px;
+    }
+
 }
 
 @media (min-width: 1000px)
@@ -195,5 +249,11 @@ body{
     .heading--h1--commande
     {
         margin-left: 30%;
+    }
+    .text--footer
+    {
+        max-width: 25%;
+        margin: auto;
+        text-align: center;
     }
 }

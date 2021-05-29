@@ -23,19 +23,23 @@
 
 @media (min-width: 600px)
 {
-    .footer__logo, .footer__nav
+    .footer__nav
     {
         max-width: 80%;
         margin-left: 10%;
     }
 }
 
-@media (min-width: 1100px)
+@media (min-width: 1000px)
 {
-    .footer__logo, .footer__nav
+    .footer__nav
     {
-        max-width: 80%;
-        margin-left: 10%;
+        max-width: 25%;
+        margin: auto;
+    }
+    .footer__li
+    {
+        justify-content: center;
     }
 }
 

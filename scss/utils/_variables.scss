@@ -85,8 +85,7 @@ $animation: page-on 2550ms 300ms both;
     25%
     {
         transform: scaleX(0.20);
-        animation-timing-function: ease-in-out;
-        animation-timing-function: normal;
+        animation-timing-function: ease-in;
     }
     50%
     {
