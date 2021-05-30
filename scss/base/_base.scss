@@ -84,6 +84,7 @@ body{
     font-size: 16px;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: black;
+    width: 100%; /* résout un problème de largeur d'écran à - de 100% pour mobile et tablette sur Chrome */
 }
 
 /* TITRES ET TEXTES */

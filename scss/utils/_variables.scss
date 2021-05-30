@@ -11,7 +11,12 @@ $background-button: linear-gradient(to top, $primary-color, $secondary-color);
 $background-button-hover: linear-gradient(to top, lighten($primary-color, 5%), lighten($secondary-color, 5%));
 $padding-section: 40px 20px 50px 20px;
 $box-shadow : 0 3px 10px $backgrey;
-$animation: page-on 2550ms 300ms both;
+$carte-opacity-entrees: carte-opacity 300ms both;
+$plat-anim-entrees: plat-anim 800ms 300ms both;
+$carte-opacity-plats: carte-opacity 300ms 800ms both;
+$plat-anim-plats: plat-anim 800ms 1100ms both;
+$carte-opacity-desserts: carte-opacity 300ms 1900ms both;
+$plat-anim-desserts: plat-anim 800ms 2200ms both;
 
 /* KEYFRAMES */
 @keyframes loader-page
@@ -102,4 +107,36 @@ $animation: page-on 2550ms 300ms both;
         transform: scaleX(1);
     }
 
+}
+
+@keyframes carte-opacity
+{
+    0%
+    {
+        opacity: 0;
+        animation-timing-function: ease-in-out;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes plat-anim
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(10px);
+        box-shadow: 0 0px 0px $backgrey;
+        animation-timing-function: ease-in-out;
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+        box-shadow: $box-shadow;
+    }
 }
