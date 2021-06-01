@@ -1,65 +1,64 @@
 /* SECTION PLATPHOTO  */
-.platphoto
-{
+.platphoto {
     position: relative;
     z-index: -1;
-    
-    &__img
-    {
+
+    &__img {
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
         width: 100%;
         height: 270px;
-        &--palette
-        {
+
+        &--palette {
             width: 100%;
         }
     }
 }
 
 /* SECTION COMMANDE */
-.carte
-{
+.carte {
     margin-bottom: 40px;
-        &--entrees
-        {
-            -webkit-animation: carte-opacity 300ms both;
-                    animation: carte-opacity 300ms both;
-        }
-        &--plats
-        {
-            -webkit-animation: $carte-opacity-plats;
-                    animation: $carte-opacity-plats;
-        }
-        &--desserts
-        {
-            -webkit-animation: $carte-opacity-desserts;
-                    animation: $carte-opacity-desserts;
-        }
+
+    &--entrees {
+        -webkit-animation: carte-opacity 300ms both;
+        animation: carte-opacity 300ms both;
+    }
+
+    &--plats {
+        -webkit-animation: $carte-opacity-plats;
+        animation: $carte-opacity-plats;
+    }
+
+    &--desserts {
+        -webkit-animation: $carte-opacity-desserts;
+        animation: $carte-opacity-desserts;
+    }
 }
 
-.commande
-{
+.commande {
     padding: $padding-section;
     background-color: $background;
     margin-top: -55px;
     border-radius: 40px 40px 0 0;
-    &__divico /* La div est de même taille que les deux svg coeurs qu'elle contient en absolute */
-    {
+    &__divico
+
+    /* La div est de même taille que les deux svg coeurs qu'elle contient en absolute */
+        {
         display: inline-block;
         width: 25px;
         height: 22px;
         position: relative;
-        &:hover > .heart--full
-        {
+
+        &:hover>.heart--full {
             opacity: 1;
         }
-        &:hover > .heart--wide
-        {
+
+        &:hover>.heart--wide {
             opacity: 0;
         }
     }
-    &__bordure{
+
+    &__bordure {
         width: 50%;
         background: -webkit-gradient(linear, left top, right top, from($third-color), to($third-color)) no-repeat;
         background: -o-linear-gradient(left, $third-color, $third-color) no-repeat;
@@ -70,63 +69,65 @@
         padding-bottom: 10px;
     }
 
-    &__li
-    {
+    &__li {
         position: relative;
         margin-bottom: 15px;
         padding: 10px 0px 10px 10px;
         border-radius: 15px;
         -webkit-box-shadow: $box-shadow;
-                box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
         background-color: white;
-        &--entrees
-        {
+
+        &--entrees {
             -webkit-animation: $plat-anim-entrees;
-                    animation: $plat-anim-entrees;
+            animation: $plat-anim-entrees;
         }
-        &--plats
-        {
+
+        &--plats {
             -webkit-animation: $plat-anim-plats;
-                    animation: $plat-anim-plats;
+            animation: $plat-anim-plats;
         }
-        &--desserts
-        {
+
+        &--desserts {
             -webkit-animation: $plat-anim-desserts;
-                    animation: $plat-anim-desserts;
+            animation: $plat-anim-desserts;
         }
-        &__detail{
+
+        &__detail {
             width: 75%;
-            white-space : nowrap; 
-            overflow : hidden; 
-            -o-text-overflow: ellipsis; 
-               text-overflow: ellipsis; 
+            white-space: nowrap;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
         }
-        &__center{
+
+        &__center {
             position: absolute;
             top: 38px;
             right: 0px;
-            padding-right: 30px;          
+            padding-right: 30px;
             background-color: white;
             -webkit-transform: translateX(0px);
-                -ms-transform: translateX(0px);
-                    transform: translateX(0px);
+            -ms-transform: translateX(0px);
+            transform: translateX(0px);
             -webkit-transition: -webkit-transform 200ms ease-out;
             transition: -webkit-transform 200ms ease-out;
             -o-transition: transform 200ms ease-out;
             transition: transform 200ms ease-out;
             transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
-            &__price
-            {
+
+            &__price {
                 width: 25%;
                 padding-top: 2px;
                 background-color: white;
-                &__provence{
+
+                &__provence {
                     padding-top: 20px;
                 }
             }
         }
-        &__right
-        {
+
+        &__right {
             height: 100%;
             width: 60px;
             position: absolute;
@@ -136,40 +137,40 @@
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
             -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
             background-color: $third-color;
             border-radius: 0 15px 15px 0;
             opacity: 0;
             -webkit-transform: translateX(60px);
-                -ms-transform: translateX(60px);
-                    transform: translateX(60px);
+            -ms-transform: translateX(60px);
+            transform: translateX(60px);
             -webkit-transition: -webkit-transform 400ms ease-out;
             transition: -webkit-transform 400ms ease-out;
             -o-transition: transform 400ms ease-out;
             transition: transform 400ms ease-out;
             transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
-            &__cont
-            {
+
+            &__cont {
                 width: 25px;
                 height: 25px;
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
                 -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
                 -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
                 border-radius: 50px;
                 background-color: white;
                 -webkit-transform: rotate(-360deg);
-                    -ms-transform: rotate(-360deg);
-                        transform: rotate(-360deg);
+                -ms-transform: rotate(-360deg);
+                transform: rotate(-360deg);
                 -webkit-transition: -webkit-transform 400ms ease-out;
                 transition: -webkit-transform 400ms ease-out;
                 -o-transition: transform 400ms ease-out;
@@ -177,74 +178,69 @@
                 transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
             }
         }
-        &:hover
-        {
+
+        &:hover {
             cursor: pointer;
         }
-        &:hover .commande__li__center
-        {
+
+        &:hover .commande__li__center {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-transform: translateX(-60px);
-                -ms-transform: translateX(-60px);
-                    transform: translateX(-60px);
+            -ms-transform: translateX(-60px);
+            transform: translateX(-60px);
         }
-        &:hover .commande__li__detail
-        {
+
+        &:hover .commande__li__detail {
             width: 61%;
         }
-        &:hover .commande__li__right
-        {
+
+        &:hover .commande__li__right {
             -webkit-transform: translateX(0px);
-                -ms-transform: translateX(0px);
-                    transform: translateX(0px);
+            -ms-transform: translateX(0px);
+            transform: translateX(0px);
             opacity: 1;
         }
-        &:hover .commande__li__right__cont
-        {
+
+        &:hover .commande__li__right__cont {
             -webkit-transform: rotate(0);
-                -ms-transform: rotate(0);
-                    transform: rotate(0);
+            -ms-transform: rotate(0);
+            transform: rotate(0);
         }
     }
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 600px)
-{
-    .platphoto
-    {
-        &__img
-        {
+@media (min-width: 600px) {
+    .platphoto {
+        &__img {
             width: 100%;
             height: 450px;
         }
     }
-    .carte
-    {
+
+    .carte {
         max-width: 80%;
         margin: auto;
         margin-bottom: 30px;
     }
 }
 
-@media (min-width: 1000px)
-{
-    .platphoto
-    {
+@media (min-width: 1000px) {
+    .platphoto {
         margin: auto;
         max-height: 550px;
-        &__img
-        {   
-        width: 100%;
-        height: 600px;
-        margin-top: -100px;
-        
+
+        &__img {
+            width: 100%;
+            height: 600px;
+            margin-top: -100px;
+
         }
     }
-    .carte
-    {
+
+    .carte {
         max-width: 40%;
         margin-bottom: 40px;
     }
