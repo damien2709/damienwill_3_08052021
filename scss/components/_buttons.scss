@@ -8,7 +8,8 @@
     color: white;
     cursor: pointer;
     text-align: center;
-    box-shadow: $box-shadow;
+    -webkit-box-shadow: $box-shadow;
+            box-shadow: $box-shadow;
     &--explo
     {
         width: 65%;
@@ -22,12 +23,13 @@
     &:hover
     {
         background: $background-button-hover;
-        box-shadow: 0 3px 10px darken($backgrey, 30%);
+        -webkit-box-shadow: 0 3px 10px darken($backgrey, 30%);
+                box-shadow: 0 3px 10px darken($backgrey, 30%);
     }
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 600px)
+@media (min-width: 650px)
 {
     .button
     {
@@ -49,11 +51,11 @@
     {
         &--explo
         {
-            max-width: 20%;
+            max-width: 300px;
         }
         &--commande
         {
-            max-width: 20%;
+            max-width: 15%;
         }
     }
 }

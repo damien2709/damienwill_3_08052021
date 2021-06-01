@@ -6,7 +6,8 @@
     
     &__img
     {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 100%;
         height: 270px;
         &--palette
@@ -22,15 +23,18 @@
     margin-bottom: 40px;
         &--entrees
         {
-            animation: carte-opacity 300ms both;
+            -webkit-animation: carte-opacity 300ms both;
+                    animation: carte-opacity 300ms both;
         }
         &--plats
         {
-            animation: $carte-opacity-plats;
+            -webkit-animation: $carte-opacity-plats;
+                    animation: $carte-opacity-plats;
         }
         &--desserts
         {
-            animation: $carte-opacity-desserts;
+            -webkit-animation: $carte-opacity-desserts;
+                    animation: $carte-opacity-desserts;
         }
 }
 
@@ -57,6 +61,8 @@
     }
     &__bordure{
         width: 50%;
+        background: -webkit-gradient(linear, left top, right top, from($third-color), to($third-color)) no-repeat;
+        background: -o-linear-gradient(left, $third-color, $third-color) no-repeat;
         background: linear-gradient(to right, $third-color, $third-color) no-repeat;
         background-size: 27% 3px;
         background-position: bottom left;
@@ -70,25 +76,30 @@
         margin-bottom: 15px;
         padding: 10px 0px 10px 10px;
         border-radius: 15px;
-        box-shadow: $box-shadow;
+        -webkit-box-shadow: $box-shadow;
+                box-shadow: $box-shadow;
         background-color: white;
         &--entrees
         {
-            animation: $plat-anim-entrees;
+            -webkit-animation: $plat-anim-entrees;
+                    animation: $plat-anim-entrees;
         }
         &--plats
         {
-            animation: $plat-anim-plats;
+            -webkit-animation: $plat-anim-plats;
+                    animation: $plat-anim-plats;
         }
         &--desserts
         {
-            animation: $plat-anim-desserts;
+            -webkit-animation: $plat-anim-desserts;
+                    animation: $plat-anim-desserts;
         }
         &__detail{
             width: 75%;
             white-space : nowrap; 
             overflow : hidden; 
-            text-overflow: ellipsis; 
+            -o-text-overflow: ellipsis; 
+               text-overflow: ellipsis; 
         }
         &__center{
             position: absolute;
@@ -96,8 +107,14 @@
             right: 0px;
             padding-right: 30px;          
             background-color: white;
-            transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+                -ms-transform: translateX(0px);
+                    transform: translateX(0px);
+            -webkit-transition: -webkit-transform 200ms ease-out;
+            transition: -webkit-transform 200ms ease-out;
+            -o-transition: transform 200ms ease-out;
             transition: transform 200ms ease-out;
+            transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
             &__price
             {
                 width: 25%;
@@ -115,25 +132,49 @@
             position: absolute;
             top: 0;
             right: 0px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             background-color: $third-color;
             border-radius: 0 15px 15px 0;
             opacity: 0;
-            transform: translateX(60px);
+            -webkit-transform: translateX(60px);
+                -ms-transform: translateX(60px);
+                    transform: translateX(60px);
+            -webkit-transition: -webkit-transform 400ms ease-out;
+            transition: -webkit-transform 400ms ease-out;
+            -o-transition: transform 400ms ease-out;
             transition: transform 400ms ease-out;
+            transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
             &__cont
             {
                 width: 25px;
                 height: 25px;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 border-radius: 50px;
                 background-color: white;
-                transform: rotate(-360deg);
+                -webkit-transform: rotate(-360deg);
+                    -ms-transform: rotate(-360deg);
+                        transform: rotate(-360deg);
+                -webkit-transition: -webkit-transform 400ms ease-out;
+                transition: -webkit-transform 400ms ease-out;
+                -o-transition: transform 400ms ease-out;
                 transition: transform 400ms ease-out;
+                transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
             }
         }
         &:hover
@@ -142,8 +183,12 @@
         }
         &:hover .commande__li__center
         {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            transform: translateX(-60px);
+            -webkit-transform: translateX(-60px);
+                -ms-transform: translateX(-60px);
+                    transform: translateX(-60px);
         }
         &:hover .commande__li__detail
         {
@@ -151,12 +196,16 @@
         }
         &:hover .commande__li__right
         {
-            transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+                -ms-transform: translateX(0px);
+                    transform: translateX(0px);
             opacity: 1;
         }
         &:hover .commande__li__right__cont
         {
-            transform: rotate(0);
+            -webkit-transform: rotate(0);
+                -ms-transform: rotate(0);
+                    transform: rotate(0);
         }
     }
 }
@@ -176,6 +225,7 @@
     {
         max-width: 80%;
         margin: auto;
+        margin-bottom: 30px;
     }
 }
 
@@ -196,5 +246,6 @@
     .carte
     {
         max-width: 40%;
+        margin-bottom: 40px;
     }
 }

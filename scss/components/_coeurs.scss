@@ -1,4 +1,4 @@
-.heart--wide /* Les 2 icones heart-index sont reliés pour la page d'accueil : 
+.heart--wide /* Les 2 icones heart sont reliés pour la page d'accueil : 
 - à la div resto__bottom__heart du fichier index.scss. La transition est déclenchée au hover de cette div.
 Pour les pages de menu :hover
 - à la div commande__divico du fichier page_menu.scss. La transition est déclenchée au hover de cette div*/
@@ -9,6 +9,8 @@ Pour les pages de menu :hover
     position: absolute;
     top: 0;
     right: 0;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -o-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
 
 }
@@ -21,5 +23,7 @@ Pour les pages de menu :hover
     top: 0;
     right: 0;
     opacity: 0;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -o-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
 }

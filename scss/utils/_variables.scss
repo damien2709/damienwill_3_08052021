@@ -19,11 +19,12 @@ $carte-opacity-desserts: carte-opacity 300ms 1900ms both;
 $plat-anim-desserts: plat-anim 800ms 2200ms both;
 
 /* KEYFRAMES */
-@keyframes loader-page
+@-webkit-keyframes loader-page
 {
     0%{
         opacity: 1;
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
         z-index: 3;
     }
     25%
@@ -33,17 +34,81 @@ $plat-anim-desserts: plat-anim 800ms 2200ms both;
     90%
     {
         opacity: 1;
-        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
     }
     99%
     {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
         z-index: 3;
     }
     100%{
         opacity: 0;
-        transform: scale(0);
+        -webkit-transform: scale(0);
+                transform: scale(0);
         z-index: -1
+    }
+
+}
+@keyframes loader-page
+{
+    0%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        z-index: 3;
+    }
+    25%
+    {
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+    }
+    99%
+    {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        z-index: 3;
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        z-index: -1
+    }
+
+}
+
+@-webkit-keyframes loader-progress
+{
+    0%{
+        opacity: 0;
+    }
+    3%
+    {
+        opacity: 1;
+    }
+    25%
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        opacity: 1;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 
 }
@@ -64,7 +129,8 @@ $plat-anim-desserts: plat-anim 800ms 2200ms both;
     50%
     {
         opacity: 1;
-        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
     }
     90%
     {
@@ -76,37 +142,103 @@ $plat-anim-desserts: plat-anim 800ms 2200ms both;
 
 }
 
-@keyframes loader-barre
+@-webkit-keyframes loader-barre
 {
     0%
     {
-        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
     }
     3%
     {
-        transform: scaleX(0);
-        animation-timing-function: ease-out;
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
     }
     25%
     {
-        transform: scaleX(0.20);
-        animation-timing-function: ease-in;
+        -webkit-transform: scaleX(0.20);
+                transform: scaleX(0.20);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
     }
     50%
     {
-        transform: scaleX(0.40);
-        animation-timing-function: ease-out;
+        -webkit-transform: scaleX(0.40);
+                transform: scaleX(0.40);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
     }
     90%
     {
-        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
         
     }
     100%
     {
-        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
     }
 
+}
+
+@keyframes loader-barre
+{
+    0%
+    {
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+    }
+    3%
+    {
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+    }
+    25%
+    {
+        -webkit-transform: scaleX(0.20);
+                transform: scaleX(0.20);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+    }
+    50%
+    {
+        -webkit-transform: scaleX(0.40);
+                transform: scaleX(0.40);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+    }
+    90%
+    {
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        
+    }
+    100%
+    {
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+    }
+
+}
+
+@-webkit-keyframes carte-opacity
+{
+    0%
+    {
+        opacity: 0;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
 }
 
 @keyframes carte-opacity
@@ -114,12 +246,36 @@ $plat-anim-desserts: plat-anim 800ms 2200ms both;
     0%
     {
         opacity: 0;
-        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
     }
 
     100%
     {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes plat-anim
+{
+    0%
+    {
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+        -webkit-box-shadow: 0 0px 0px $backgrey;
+                box-shadow: 0 0px 0px $backgrey;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+    }
+
+    100%
+    {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        -webkit-box-shadow: $box-shadow;
+                box-shadow: $box-shadow;
     }
 }
 
@@ -128,15 +284,20 @@ $plat-anim-desserts: plat-anim 800ms 2200ms both;
     0%
     {
         opacity: 0;
-        transform: translateY(10px);
-        box-shadow: 0 0px 0px $backgrey;
-        animation-timing-function: ease-in-out;
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+        -webkit-box-shadow: 0 0px 0px $backgrey;
+                box-shadow: 0 0px 0px $backgrey;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
     }
 
     100%
     {
         opacity: 1;
-        transform: translateY(0px);
-        box-shadow: $box-shadow;
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        -webkit-box-shadow: $box-shadow;
+                box-shadow: $box-shadow;
     }
 }

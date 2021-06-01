@@ -2,9 +2,10 @@
 /* Ne pas oublier d'importer les feuilles dans un ordre à respecter ! Les média queries à la fin !!! */
 /* Variables */
 /* KEYFRAMES */
-@keyframes loader-page {
+@-webkit-keyframes loader-page {
   0% {
     opacity: 1;
+    -webkit-transform: scale(1);
     transform: scale(1);
     z-index: 3;
   }
@@ -13,16 +14,68 @@
   }
   90% {
     opacity: 1;
+    -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
   }
   99% {
+    -webkit-transform: scale(1);
     transform: scale(1);
     z-index: 3;
   }
   100% {
     opacity: 0;
+    -webkit-transform: scale(0);
     transform: scale(0);
     z-index: -1;
+  }
+}
+@keyframes loader-page {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    z-index: 3;
+  }
+  25% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  99% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    z-index: -1;
+  }
+}
+@-webkit-keyframes loader-progress {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes loader-progress {
@@ -37,6 +90,7 @@
   }
   50% {
     opacity: 1;
+    -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
   }
   90% {
@@ -46,48 +100,123 @@
     opacity: 0;
   }
 }
-@keyframes loader-barre {
+@-webkit-keyframes loader-barre {
   0% {
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
   }
   3% {
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   25% {
+    -webkit-transform: scaleX(0.2);
     transform: scaleX(0.2);
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   50% {
+    -webkit-transform: scaleX(0.4);
     transform: scaleX(0.4);
+    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   90% {
+    -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
   100% {
+    -webkit-transform: scaleX(1);
     transform: scaleX(1);
+  }
+}
+@keyframes loader-barre {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  3% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    -webkit-transform: scaleX(0.2);
+    transform: scaleX(0.2);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  90% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes carte-opacity {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes carte-opacity {
   0% {
     opacity: 0;
+    -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
   }
   100% {
     opacity: 1;
   }
 }
-@keyframes plat-anim {
+@-webkit-keyframes plat-anim {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(10px);
     transform: translateY(10px);
+    -webkit-box-shadow: 0 0px 0px #adadad;
     box-shadow: 0 0px 0px #adadad;
+    -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
+    -webkit-box-shadow: 0 3px 10px #adadad;
+    box-shadow: 0 3px 10px #adadad;
+  }
+}
+@keyframes plat-anim {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-box-shadow: 0 0px 0px #adadad;
+    box-shadow: 0 0px 0px #adadad;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-box-shadow: 0 3px 10px #adadad;
     box-shadow: 0 3px 10px #adadad;
   }
 }
@@ -146,6 +275,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
 }
@@ -279,6 +409,11 @@ body {
     margin-left: 30%;
   }
 
+  .heading--h2--resto {
+    width: 60%;
+    margin-left: 20%;
+  }
+
   .text--footer {
     max-width: 25%;
     margin: auto;
@@ -294,6 +429,7 @@ body {
   color: white;
   cursor: pointer;
   text-align: center;
+  -webkit-box-shadow: 0 3px 10px #adadad;
   box-shadow: 0 3px 10px #adadad;
 }
 .button--explo {
@@ -306,11 +442,12 @@ body {
 }
 .button:hover {
   background: linear-gradient(to top, #a16be0, #ff93e1);
+  -webkit-box-shadow: 0 3px 10px #616161;
   box-shadow: 0 3px 10px #616161;
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .button--explo {
     max-width: 40%;
   }
@@ -321,10 +458,10 @@ body {
 }
 @media (min-width: 1000px) {
   .button--explo {
-    max-width: 20%;
+    max-width: 300px;
   }
   .button--commande {
-    max-width: 20%;
+    max-width: 15%;
   }
 }
 /* Icones téléchargés */
@@ -335,9 +472,11 @@ body {
 .ico--fonction {
   width: 18px;
   height: 22px;
+  -webkit-filter: invert(54%) sepia(4%) saturate(31%) hue-rotate(336deg) brightness(90%) contrast(91%);
   filter: invert(54%) sepia(4%) saturate(31%) hue-rotate(336deg) brightness(90%) contrast(91%);
 }
 .ico--footer {
+  -webkit-filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(65deg) brightness(111%) contrast(101%);
   filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(65deg) brightness(111%) contrast(101%);
   margin-right: 10px;
 }
@@ -370,6 +509,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
 
@@ -380,6 +521,8 @@ body {
   top: 0;
   right: 0;
   opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
 
@@ -406,7 +549,11 @@ body {
   position: absolute;
   left: 0;
   top: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
   z-index: 2;
 }
@@ -425,13 +572,19 @@ body {
   top: 0;
   left: 0;
   background-color: white;
+  -webkit-animation: loader-page 3000ms forwards;
   animation: loader-page 3000ms forwards;
 }
 .loader__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 300px;
   margin-bottom: 40px;
+  -webkit-animation: loader-progress 2250ms 250ms both;
   animation: loader-progress 2250ms 250ms both;
 }
 .loader__progress {
@@ -439,13 +592,19 @@ body {
   height: 30px;
   margin: auto;
   border: 1px solid #9356DC;
+  -webkit-animation: loader-progress 2250ms 250ms both;
   animation: loader-progress 2250ms 250ms both;
 }
 .loader__progress__barre {
   height: 100%;
   width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(left, #9356DC, #FF79DA);
   background: linear-gradient(to right, #9356DC, #FF79DA);
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
+  -webkit-animation: loader-barre 2250ms 250ms both;
   animation: loader-barre 2250ms 250ms both;
 }
 
@@ -464,6 +623,7 @@ body {
   top: -4px;
   left: 0;
   opacity: 0.3;
+  -webkit-box-shadow: 0px 3px 3px #858585;
   box-shadow: 0px 3px 3px #858585;
 }
 
@@ -478,7 +638,11 @@ body {
 }
 .fonction__li {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-left: 40px;
   height: 70px;
@@ -490,6 +654,7 @@ body {
   background-color: #f2eafb;
 }
 .fonction__li:hover .ico--fonction {
+  -webkit-filter: invert(43%) sepia(66%) saturate(4357%) hue-rotate(245deg) brightness(93%) contrast(85%);
   filter: invert(43%) sepia(66%) saturate(4357%) hue-rotate(245deg) brightness(93%) contrast(85%);
 }
 .fonction__li__num {
@@ -499,15 +664,25 @@ body {
   left: -12px;
   position: absolute;
   border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #9356DC;
   color: white;
 }
 .fonction__li__div {
   width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -522,35 +697,37 @@ body {
 .resto__a__top {
   height: 170px;
   border-radius: 15px 15px 0 0;
+  -webkit-box-shadow: 0 3px 10px #adadad;
   box-shadow: 0 3px 10px #adadad;
 }
 .resto__a__top__1 {
   position: relative;
   background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
   background-size: 105%;
-  background-position: bottom center;
+  background-position: center bottom;
 }
 .resto__a__top__2 {
   position: relative;
   background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;
   background-size: cover;
-  background-position: center -145px;
+  background-position: center 60%;
 }
 .resto__a__top__3 {
   background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_light.jpg) no-repeat;
   background-size: cover;
-  background-position: center -50px;
+  background-position: center 95%;
 }
 .resto__a__top__4 {
   background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
   background-size: cover;
-  background-position: center -55px;
+  background-position: center 95%;
 }
 .resto__a__bottom {
   height: 80px;
   position: relative;
   background: white;
   border-radius: 0 0 15px 15px;
+  -webkit-box-shadow: 0 3px 10px #adadad;
   box-shadow: 0 3px 10px #adadad;
   padding: 15px 20px 15px 10px;
 }
@@ -574,21 +751,28 @@ body {
 .nouveau {
   width: 80px;
   height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: absolute;
   right: 15px;
   top: 13px;
   background-color: #99E2D0;
   border-radius: 2px;
-  box-shadow: 0 3px 10px #adadad;
+  -webkit-box-shadow: 0 1px 10px black;
+  box-shadow: 0 1px 10px black;
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .fonction {
-    max-width: 60%;
+    max-width: 50%;
     margin: auto;
   }
 
@@ -602,8 +786,12 @@ body {
 }
 @media (min-width: 1000px) {
   .fonction {
-    max-width: 40%;
+    max-width: 400px;
     margin: auto;
+  }
+
+  .resto__ul {
+    max-width: 60%;
   }
 
   .resto__a__top {
@@ -616,6 +804,7 @@ body {
   z-index: -1;
 }
 .platphoto__img {
+  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 270px;
@@ -629,12 +818,15 @@ body {
   margin-bottom: 40px;
 }
 .carte--entrees {
+  -webkit-animation: carte-opacity 300ms both;
   animation: carte-opacity 300ms both;
 }
 .carte--plats {
+  -webkit-animation: carte-opacity 300ms 800ms both;
   animation: carte-opacity 300ms 800ms both;
 }
 .carte--desserts {
+  -webkit-animation: carte-opacity 300ms 1900ms both;
   animation: carte-opacity 300ms 1900ms both;
 }
 
@@ -658,6 +850,8 @@ body {
 }
 .commande__bordure {
   width: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#99E2D0), to(#99E2D0)) no-repeat;
+  background: -o-linear-gradient(left, #99E2D0, #99E2D0) no-repeat;
   background: linear-gradient(to right, #99E2D0, #99E2D0) no-repeat;
   background-size: 27% 3px;
   background-position: bottom left;
@@ -669,22 +863,27 @@ body {
   margin-bottom: 15px;
   padding: 10px 0px 10px 10px;
   border-radius: 15px;
+  -webkit-box-shadow: 0 3px 10px #adadad;
   box-shadow: 0 3px 10px #adadad;
   background-color: white;
 }
 .commande__li--entrees {
+  -webkit-animation: plat-anim 800ms 300ms both;
   animation: plat-anim 800ms 300ms both;
 }
 .commande__li--plats {
+  -webkit-animation: plat-anim 800ms 1100ms both;
   animation: plat-anim 800ms 1100ms both;
 }
 .commande__li--desserts {
+  -webkit-animation: plat-anim 800ms 2200ms both;
   animation: plat-anim 800ms 2200ms both;
 }
 .commande__li__detail {
   width: 75%;
   white-space: nowrap;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 .commande__li__center {
@@ -693,8 +892,14 @@ body {
   right: 0px;
   padding-right: 30px;
   background-color: white;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
   transform: translateX(0px);
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out;
+  -o-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
 }
 .commande__li__center__price {
   width: 25%;
@@ -710,41 +915,73 @@ body {
   position: absolute;
   top: 0;
   right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   opacity: 0;
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
   transform: translateX(60px);
+  -webkit-transition: -webkit-transform 400ms ease-out;
+  transition: -webkit-transform 400ms ease-out;
+  -o-transition: transform 400ms ease-out;
   transition: transform 400ms ease-out;
+  transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
 }
 .commande__li__right__cont {
   width: 25px;
   height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 50px;
   background-color: white;
+  -webkit-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
   transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform 400ms ease-out;
+  transition: -webkit-transform 400ms ease-out;
+  -o-transition: transform 400ms ease-out;
   transition: transform 400ms ease-out;
+  transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
 }
 .commande__li:hover {
   cursor: pointer;
 }
 .commande__li:hover .commande__li__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translateX(-60px);
+  -ms-transform: translateX(-60px);
   transform: translateX(-60px);
 }
 .commande__li:hover .commande__li__detail {
   width: 61%;
 }
 .commande__li:hover .commande__li__right {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
   transform: translateX(0px);
   opacity: 1;
 }
 .commande__li:hover .commande__li__right__cont {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
   transform: rotate(0);
 }
 
@@ -758,6 +995,7 @@ body {
   .carte {
     max-width: 80%;
     margin: auto;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 1000px) {
@@ -773,6 +1011,7 @@ body {
 
   .carte {
     max-width: 40%;
+    margin-bottom: 40px;
   }
 }
 .footer {
@@ -781,12 +1020,15 @@ body {
 }
 .footer__logo {
   height: 17px;
+  -webkit-filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(65deg) brightness(111%) contrast(101%);
   filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(65deg) brightness(111%) contrast(101%);
 }
 .footer__nav {
   margin-top: 13px;
 }
 .footer__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 5px;
 }
@@ -808,6 +1050,8 @@ body {
   }
 
   .footer__li {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
