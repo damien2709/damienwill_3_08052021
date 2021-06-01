@@ -533,7 +533,8 @@ body {
   text-align: center;
   background: white;
 }
-.header__logo__a {
+.header__logo__div {
+  display: inline;
   position: relative;
 }
 .header__logo__img {
