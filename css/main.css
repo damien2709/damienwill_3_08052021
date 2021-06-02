@@ -164,6 +164,17 @@
     transform: scaleX(1);
   }
 }
+@keyframes accueil-opacity {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes carte-opacity {
   0% {
     opacity: 0;
@@ -295,7 +306,7 @@ body {
 }
 .heading--h1--explo {
   text-align: center;
-  padding: 0 30px 15px 30px;
+  padding: 40px 30px 15px 30px;
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 .heading--h1--commande {
@@ -549,7 +560,7 @@ body {
 .local {
   position: absolute;
   left: 0;
-  top: 42px;
+  top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,6 +702,7 @@ body {
 .resto {
   padding: 40px 20px 50px 20px;
   background-color: whitesmoke;
+  animation: accueil-opacity 3000ms forwards;
 }
 .resto__li {
   margin-bottom: 20px;
@@ -703,23 +715,23 @@ body {
 }
 .resto__a__top__1 {
   position: relative;
-  background: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
+  background: url(/css/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
   background-size: 105%;
   background-position: center bottom;
 }
 .resto__a__top__2 {
   position: relative;
-  background: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;
+  background: url(/css/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center 60%;
 }
 .resto__a__top__3 {
-  background: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_light.jpg) no-repeat;
+  background: url(/css/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_light.jpg) no-repeat;
   background-size: cover;
   background-position: center 95%;
 }
 .resto__a__top__4 {
-  background: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
+  background: url(/css/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center 95%;
 }
@@ -1018,6 +1030,7 @@ body {
 .footer {
   padding: 25px 20px;
   background-color: #353535;
+  animation: accueil-opacity 3000ms forwards;
 }
 .footer__logo {
   height: 17px;
