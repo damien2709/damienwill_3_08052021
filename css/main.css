@@ -1022,6 +1022,8 @@ body {
 .footer {
   padding: 25px 20px;
   background-color: #353535;
+}
+.footer--accueil {
   opacity: 0;
   -webkit-animation: accueil-opacity 400ms 2250ms forwards;
   animation: accueil-opacity 400ms 2250ms forwards;
