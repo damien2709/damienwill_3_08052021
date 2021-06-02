@@ -168,7 +168,7 @@
   0% {
     opacity: 0;
   }
-  80% {
+  99% {
     opacity: 0;
   }
   100% {
@@ -647,6 +647,7 @@ body {
 /* SECTION FONCTION */
 .fonction {
   padding: 40px 20px 50px 30px;
+  animation: accueil-opacity 3000ms forwards;
 }
 .fonction__li {
   position: relative;
