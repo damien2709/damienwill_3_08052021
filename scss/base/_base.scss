@@ -154,7 +154,7 @@ body{
     {
         text-align: center;
         margin-bottom: 15px; 
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 200;
     }
     &--fonction
@@ -210,8 +210,12 @@ body{
     
 }
 
-@media (max-width:350px)
+@media (max-width:360px)
 {
+    .heading--h3--commande
+    {
+        font-size: 1rem;
+    }
     .text--button
     {
         font-size: 0.85rem;

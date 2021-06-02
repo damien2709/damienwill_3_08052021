@@ -8,10 +8,15 @@
             &__div{
                 display: inline;
                 position: relative;
-
             }
             &__img{
                 max-width: 45%; 
+                &--accueil
+                {
+                    opacity: 0;
+                    -webkit-animation: accueil-opacity 400ms 2250ms forwards;
+                            animation: accueil-opacity 400ms 2250ms forwards;
+                }
             }
     }
     &__arrow{
@@ -32,6 +37,9 @@
         -ms-flex-align: baseline;
             align-items: baseline;
     z-index: 2;
+    opacity: 0;
+    -webkit-animation: accueil-opacity 400ms 2250ms forwards;
+            animation: accueil-opacity 400ms 2250ms forwards;
 }
 
 @media (min-width: 600px)

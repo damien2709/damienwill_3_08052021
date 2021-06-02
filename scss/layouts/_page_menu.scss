@@ -60,8 +60,8 @@
 
     &__bordure {
         width: 50%;
-        background: -webkit-gradient(linear, left top, right top, from($third-color), to($third-color)) no-repeat;
         background: -o-linear-gradient(left, $third-color, $third-color) no-repeat;
+        background: -webkit-gradient(linear, left top, right top, from($third-color), to($third-color)) no-repeat;
         background: linear-gradient(to right, $third-color, $third-color) no-repeat;
         background-size: 27% 3px;
         background-position: bottom left;
@@ -105,7 +105,7 @@
             position: absolute;
             top: 38px;
             right: 0px;
-            padding-right: 30px;
+            margin-right: 25px;
             background-color: white;
             -webkit-transform: translateX(0px);
             -ms-transform: translateX(0px);
@@ -212,6 +212,7 @@
 }
 
 /* MEDIA QUERIES */
+
 @media (min-width: 600px) {
     .platphoto {
         &__img {
