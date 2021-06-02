@@ -179,22 +179,6 @@ $plat-anim-desserts: plat-anim 800ms 2200ms both;
 
 }
 
-@keyframes accueil-opacity
-{
-    0%
-    {
-        opacity: 0;
-    }
-    99%
-    {
-        opacity: 0;
-    }
-    100%
-    {
-        opacity: 1;
-    }
-}
-
 @-webkit-keyframes carte-opacity
 {
     0%
