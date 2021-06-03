@@ -206,9 +206,9 @@
   font-family: "Shrikhand";
   font-style: normal;
   font-weight: 400;
-  src: url("../polices/shrikhand-v6-latin-regular.eot");
+  src: url("../css/polices/shrikhand-v6-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../polices/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../polices/shrikhand-v6-latin-regular.woff2") format("woff2"), url("../polices/shrikhand-v6-latin-regular.woff") format("woff"), url("../polices/shrikhand-v6-latin-regular.ttf") format("truetype"), url("../polices/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
+  src: local(""), url("../css/polices/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../css/polices/shrikhand-v6-latin-regular.woff2") format("woff2"), url("../css/polices/shrikhand-v6-latin-regular.woff") format("woff"), url("../css/polices/shrikhand-v6-latin-regular.ttf") format("truetype"), url("../css/polices/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
   /* Legacy iOS */
 }
 /* roboto-100 - latin */
@@ -216,9 +216,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
-  src: url("../polices/roboto-v27-latin-100.eot");
+  src: url("../css/polices/roboto-v27-latin-100.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../polices/roboto-v27-latin-100.eot?#iefix") format("embedded-opentype"), url("../polices/roboto-v27-latin-100.woff2") format("woff2"), url("../polices/roboto-v27-latin-100.woff") format("woff"), url("../polices/roboto-v27-latin-100.ttf") format("truetype"), url("../polices/roboto-v27-latin-100.svg#Roboto") format("svg");
+  src: local(""), url("../css/polices/roboto-v27-latin-100.eot?#iefix") format("embedded-opentype"), url("../css/polices/roboto-v27-latin-100.woff2") format("woff2"), url("../css/polices/roboto-v27-latin-100.woff") format("woff"), url("../css/polices/roboto-v27-latin-100.ttf") format("truetype"), url("../css/polices/roboto-v27-latin-100.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* roboto-300 - latin */
@@ -226,9 +226,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url("../polices/roboto-v27-latin-300.eot");
+  src: url("../css/polices/roboto-v27-latin-300.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../polices/roboto-v27-latin-300.eot?#iefix") format("embedded-opentype"), url("../polices/roboto-v27-latin-300.woff2") format("woff2"), url("../polices/roboto-v27-latin-300.woff") format("woff"), url("../polices/roboto-v27-latin-300.ttf") format("truetype"), url("../polices/roboto-v27-latin-300.svg#Roboto") format("svg");
+  src: local(""), url("../css/polices/roboto-v27-latin-300.eot?#iefix") format("embedded-opentype"), url("../css/polices/roboto-v27-latin-300.woff2") format("woff2"), url("../css/polices/roboto-v27-latin-300.woff") format("woff"), url("../css/polices/roboto-v27-latin-300.ttf") format("truetype"), url("../css/polices/roboto-v27-latin-300.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* roboto-regular - latin */
@@ -236,9 +236,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../polices/roboto-v27-latin-regular.eot");
+  src: url("../css/polices/roboto-v27-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../polices/roboto-v27-latin-regular.eot?#iefix") format("embedded-opentype"), url("../polices/roboto-v27-latin-regular.woff2") format("woff2"), url("../polices/roboto-v27-latin-regular.woff") format("woff"), url("../polices/roboto-v27-latin-regular.ttf") format("truetype"), url("../polices/roboto-v27-latin-regular.svg#Roboto") format("svg");
+  src: local(""), url("../css/polices/roboto-v27-latin-regular.eot?#iefix") format("embedded-opentype"), url("../css/polices/roboto-v27-latin-regular.woff2") format("woff2"), url("../css/polices/roboto-v27-latin-regular.woff") format("woff"), url("../css/polices/roboto-v27-latin-regular.ttf") format("truetype"), url("../css/polices/roboto-v27-latin-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* roboto-500 - latin */
@@ -246,9 +246,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("../polices/roboto-v27-latin-500.eot");
+  src: url("../css/polices/roboto-v27-latin-500.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../polices/roboto-v27-latin-500.eot?#iefix") format("embedded-opentype"), url("../polices/roboto-v27-latin-500.woff2") format("woff2"), url("../polices/roboto-v27-latin-500.woff") format("woff"), url("../polices/roboto-v27-latin-500.ttf") format("truetype"), url("../polices/roboto-v27-latin-500.svg#Roboto") format("svg");
+  src: local(""), url("../css/polices/roboto-v27-latin-500.eot?#iefix") format("embedded-opentype"), url("../css/polices/roboto-v27-latin-500.woff2") format("woff2"), url("../css/polices/roboto-v27-latin-500.woff") format("woff"), url("../css/polices/roboto-v27-latin-500.ttf") format("truetype"), url("../css/polices/roboto-v27-latin-500.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* GENERAL */
