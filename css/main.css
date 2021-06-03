@@ -707,23 +707,23 @@ body {
 }
 .resto__a__top__1 {
   position: relative;
-  background: url(/css/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
+  background: url(../css/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
   background-size: 105%;
   background-position: center bottom;
 }
 .resto__a__top__2 {
   position: relative;
-  background: url(/css/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;
+  background: url(../css/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center 60%;
 }
 .resto__a__top__3 {
-  background: url(/css/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_light.jpg) no-repeat;
+  background: url(../css/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_light.jpg) no-repeat;
   background-size: cover;
   background-position: center 95%;
 }
 .resto__a__top__4 {
-  background: url(/css/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
+  background: url(../css/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center 95%;
 }
