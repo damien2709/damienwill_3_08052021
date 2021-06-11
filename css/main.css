@@ -280,7 +280,7 @@ body {
 }
 .heading--h1--commande {
   display: inline-block;
-  margin-right: 25px;
+  width: 83%;
   margin-bottom: 30px;
   font-size: 1.6rem;
 }
@@ -369,7 +369,9 @@ body {
 }
 @media (min-width: 600px) {
   .heading--h1--commande {
+    width: initial;
     margin-left: 10%;
+    margin-right: 35px;
   }
 
   .heading--h2--resto {
